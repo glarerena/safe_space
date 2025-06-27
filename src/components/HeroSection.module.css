@@ -1,0 +1,116 @@
+.hero {
+  min-height: min(90vh, 600px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--section-padding);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--content-gap);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.subtitle {
+  font-size: var(--font-h2);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.primaryButton {
+  background: var(--cta-primary);
+  color: var(--cta-primary-text);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primaryButton:hover {
+  filter: brightness(0.95);
+}
+
+.secondaryButton {
+  background: var(--cta-secondary-bg);
+  color: var(--cta-secondary-text);
+  border: 2px solid var(--cta-secondary-border);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.secondaryButton:hover {
+  background: var(--cta-secondary-border);
+  color: var(--cta-primary-text);
+  filter: brightness(0.95);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: min(80vh, 500px);
+    padding: 2rem 1rem;
+  }
+  
+  .content {
+    gap: 1rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+} 

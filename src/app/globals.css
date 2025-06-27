@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  color: #333B4F;
+  background: #F9FAFB;
+  padding-top: 80px; /* Account for fixed header */
+}
+
+body {
+  color: #333B4F;
+  background: #F9FAFB;
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 3rem 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button:focus,
+input:focus,
+a:focus {
+  outline: 2px solid #6A8CAF;
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #CDE7F0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6A8CAF;
+}
+
+:root {
+  /* Color Palette */
+  --background-main: #F9FAFB;
+  --text-primary: #333B4F;
+  --accent-blue: #CDE7F0;
+  --soft-peach: #FFE5D4;
+  --cta-primary: #6A8CAF;
+  --cta-primary-text: #FFFFFF;
+  --cta-secondary-bg: #FFFFFF;
+  --cta-secondary-border: #6A8CAF;
+  --cta-secondary-text: #6A8CAF;
+  --footer-bg: #ECEFF1;
+  --text-muted: #666;
+  
+  /* Typography */
+  --font-h1: 2rem;
+  --font-h2: 1.25rem;
+  --font-body: 1rem;
+  --font-small: 0.875rem;
+  
+  /* Spacing */
+  --section-padding: 3rem 1.5rem;
+  --content-gap: 1.5rem;
+  
+  /* Layout */
+  --max-width: 1100px;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px; /* Account for fixed header */
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: var(--font-body);
+}
+
+/* Scroll-triggered animations */
+.section-animate {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease-out;
+}
+
+.section-animate.from-left {
+  transform: translateX(-100px);
+}
+
+.section-animate.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Intersection Observer fallback */
+@media (prefers-reduced-motion: reduce) {
+  .section-animate {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Global button styles with hover effect */
+.btn-primary {
+  background: var(--cta-primary);
+  color: var(--cta-primary-text);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  background: var(--cta-secondary-bg);
+  color: var(--cta-secondary-text);
+  border: 2px solid var(--cta-secondary-border);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover {
+  background: var(--cta-secondary-border);
+  color: var(--cta-primary-text);
+  filter: brightness(0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Global button hover effect for all buttons */
+button {
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Disable hover effects on mobile */
+  button:hover,
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}

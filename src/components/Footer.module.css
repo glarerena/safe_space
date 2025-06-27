@@ -1,0 +1,39 @@
+.footer {
+  background-color: var(--footer-bg);
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.text {
+  font-size: var(--font-small);
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.text a {
+  color: var(--cta-primary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.text a:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+} 

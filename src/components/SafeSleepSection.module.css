@@ -1,0 +1,105 @@
+.safeSleep {
+  padding: var(--section-padding);
+  background-color: var(--accent-blue);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-gap);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.description {
+  font-size: var(--font-body);
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.bulletPoints {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.bulletPoint {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  font-size: var(--font-body);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.bulletIcon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.downloadButton {
+  background: var(--cta-primary);
+  color: var(--cta-primary-text);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.downloadButton:hover {
+  filter: brightness(0.95);
+}
+
+@media (max-width: 768px) {
+  .safeSleep {
+    padding: 2rem 1rem;
+  }
+  
+  .content {
+    gap: 1rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .bulletPoints {
+    gap: 0.75rem;
+  }
+  
+  .bulletPoint {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .downloadButton {
+    width: 100%;
+    text-align: center;
+  }
+} 

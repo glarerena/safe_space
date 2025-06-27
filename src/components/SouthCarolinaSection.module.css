@@ -1,0 +1,111 @@
+.southCarolina {
+  padding: var(--section-padding);
+  background-color: var(--background-main);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-gap);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.statsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: var(--accent-blue);
+  border-radius: 12px;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+.statItem h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cta-primary);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.6;
+}
+
+.statItem p {
+  font-size: var(--font-body);
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.textContent p {
+  font-size: var(--font-body);
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .southCarolina {
+    padding: 2rem 1rem;
+  }
+  
+  .content {
+    gap: 1rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .statsCard {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .statItem {
+    padding: 0.75rem;
+  }
+  
+  .statItem h3 {
+    font-size: 1.75rem;
+  }
+} 
