@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Safe Space, Stronger Families
+
+A public awareness and education campaign for **infant safe sleep** and **family reunification** in South Carolina. Developed for **53205**, an advocacy initiative led by **Myeshia Bates**.
+
+This project is built using [Next.js](https://nextjs.org) with **TypeScript** and **CSS Modules**, and was bootstrapped using [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). It is designed as a responsive, accessible landing page with a focus on dignity, equity, and second chances.
 
 ## Getting Started
 
-First, run the development server:
+To run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once the server is running, open your browser and visit:  
+[http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To start editing the landing page, go to:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/page.tsx
+```
 
-## Learn More
+Changes will automatically update in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to load the [Geist](https://vercel.com/font) font family from Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Campaign Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Safe Space, Stronger Families is a hybrid public awareness campaign focused on two critical issues impacting South Carolina communities:
 
-## Deploy on Vercel
+- Promoting infant safe sleep practices to reduce preventable sleep-related deaths  
+- Providing trauma-informed family education for caregivers impacted by incarceration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The campaign is part of **53205**, a community initiative led by **Myeshia Bates**, and aims to combine public health outreach with justice-informed family support.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> 📍 South Carolina  
+> 📧 [miyesha.bates@gmail.com](mailto:miyesha.bates@gmail.com)
+
+**Note:** This project is independent and not affiliated with any reentry program. It focuses solely on safe sleep advocacy and family education.
+
+## Deployment
+
+This project is ready to deploy with [Vercel](https://vercel.com), the official platform from the creators of Next.js.  
+To learn how to deploy your own Next.js app, visit the [deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+© 2025 • Made with ❤️ by [renaglare.dev](https://renaglare.dev) • 53205
