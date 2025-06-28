@@ -68,14 +68,12 @@ Thank you!`);
               <div className={styles.contactForm}>
                 <h3>Contact Us</h3>
                 <form
-                  action="https://formsubmit.co/contact.53205@gmail.com"
+                  action="https://formspree.io/f/xvgrddjp"
                   method="POST"
                   onSubmit={handleFormSubmit}
                 >
-                  <input type="hidden" name="_next" value={window.location.href} />
                   <input type="hidden" name="_subject" value="Safe Space Campaign - Contact Form" />
-                  <input type="hidden" name="_captcha" value="false" />
-                  <input type="text" name="_honey" style={{ display: 'none' }} />
+                  <input type="text" name="_gotcha" style={{ display: 'none' }} />
 
                   <div className={styles.formGroup}>
                     <label htmlFor="name">Name *</label>
