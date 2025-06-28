@@ -64,7 +64,7 @@ Thank you!`);
                   method="POST"
                 >
                   <input type="hidden" name="_subject" value="Safe Space Campaign - Contact Form" />
-                  <input type="hidden" name="_next" value={window.location.href} />
+                  <input type="hidden" name="_next" value="https://safe-space-campaign.vercel.app" />
                   <input type="text" name="_gotcha" style={{ display: 'none' }} />
 
                   <div className={styles.formGroup}>
