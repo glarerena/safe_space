@@ -44,8 +44,9 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  display: inline-block;
-  margin: 1rem 0;
+  display: block;
+  width: 200px;
+  margin: 0 auto 1rem auto;
 }
 
 .ctaButton:hover {
@@ -58,25 +59,154 @@
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .smallLink {
-  color: var(--cta-primary);
+  color: var(--cta-primary-text);
   text-decoration: none;
   font-size: var(--font-body);
-  font-weight: 500;
-  transition: color 0.2s ease-in-out;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  background: var(--cta-primary);
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .smallLink:hover {
-  color: var(--text-primary);
+  filter: brightness(0.95);
 }
 
 .separator {
   color: var(--text-primary);
   opacity: 0.5;
   font-size: var(--font-body);
+}
+
+.contactFormOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.contactForm {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contactForm h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--cta-primary);
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.formButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.submitButton {
+  background: var(--cta-primary);
+  color: var(--cta-primary-text);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.submitButton:hover {
+  filter: brightness(0.95);
+}
+
+.cancelButton {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid #e1e5e9;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cancelButton:hover {
+  background: #f8f9fa;
+  border-color: #cbd5e0;
+}
+
+.successMessage {
+  background: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border: 1px solid #c3e6cb;
+}
+
+.successMessage p {
+  margin: 0;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -103,5 +233,28 @@
   
   .smallLinks {
     gap: 0.25rem;
+  }
+  
+  .contactFormOverlay {
+    padding: 0.5rem;
+  }
+  
+  .contactForm {
+    padding: 1.5rem;
+    max-height: 95vh;
+  }
+  
+  .contactForm h3 {
+    font-size: 1.25rem;
+  }
+  
+  .formButtons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .submitButton,
+  .cancelButton {
+    width: 100%;
   }
 } 

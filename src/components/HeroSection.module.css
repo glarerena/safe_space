@@ -22,6 +22,12 @@
   margin: 0 auto;
 }
 
+.logo {
+  margin-bottom: 1rem;
+  max-width: 200px;
+  height: auto;
+}
+
 .title {
   font-size: var(--font-h1);
   font-weight: 700;

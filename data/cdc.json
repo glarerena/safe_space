@@ -1,0 +1,21 @@
+{
+  "title": "📊 CDC – Safe Sleep Research (2022)",
+  "source": "CDC – Data and Statistics for SUID & SIDS (https://www.cdc.gov/sids/data-research/data/index.html)",
+  "summary": [
+    "SUID (Sudden Unexpected Infant Death) includes:",
+    "- Sudden Infant Death Syndrome (SIDS)",
+    "- Unknown cause",
+    "- Accidental suffocation and strangulation in bed",
+    "",
+    "These deaths occur in infants under 1 year old with no immediately obvious cause."
+  ],
+  "stats": {
+    "sids": 1529,
+    "unknown": 1131,
+    "suffocation": 1040,
+    "total": 3700
+  },
+  "quote": "Nearly 3,700 babies died in 2022 due to unsafe sleep conditions. Many of these deaths were preventable with better education and awareness.",
+  "cta": "Nearly 3,700 babies lost in one year — most during sleep. Safe sleep isn’t optional. It’s life-saving.",
+  "attribution": "— Based on CDC SUID & SIDS Data, 2022"
+}

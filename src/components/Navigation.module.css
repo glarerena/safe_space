@@ -42,6 +42,37 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem;
+  border-radius: 6px;
+  position: relative;
+}
+
+.logo:hover {
+  background: rgba(106, 140, 175, 0.1);
+  transform: scale(1.05);
+}
+
+.logo:hover h2,
+.logo:hover span {
+  color: var(--cta-primary);
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--cta-primary);
+  transition: all 0.2s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.logo:hover::after {
+  width: 80%;
 }
 
 .logo h2 {

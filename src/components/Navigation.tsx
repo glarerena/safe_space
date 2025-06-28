@@ -33,11 +33,18 @@ export default function Navigation() {
     }
   };
 
+  const scrollToFooter = () => {
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className={`${styles.container} ${isHidden ? styles.hidden : ''}`}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={scrollToFooter}>
         <h2>Safe Space</h2>
-        <span>by 53205</span>
+        <span>53205</span>
       </div>
       
       <div className={styles.navLinks}>

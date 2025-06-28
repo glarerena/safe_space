@@ -2,14 +2,43 @@
 
 import styles from './HeroSection.module.css';
 import { useScrollAnimation } from './useScrollAnimation';
+import Image from 'next/image';
 
 export default function HeroSection() {
   const { ref, className } = useScrollAnimation('right');
+
+  const scrollToSafeSleep = () => {
+    const safeSleepSection = document.getElementById('safe-sleep');
+    if (safeSleepSection) {
+      safeSleepSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
+  const scrollToBookSpeaker = () => {
+    // Scroll to the call-to-action section
+    const ctaSection = document.getElementById('call-to-action');
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
 
   return (
     <section id="hero" className={styles.hero} style={{ backgroundColor: 'var(--background-main)' }}>
       <div className={styles.container}>
         <div ref={ref} className={`${styles.content} ${className}`}>
+          <Image 
+            src="/assets/53205.svg" 
+            alt="53205 Logo" 
+            width={200} 
+            height={80} 
+            className={styles.logo}
+          />
           <h1 className={styles.title}>
             Every Baby Deserves a Safe Start.
           </h1>
@@ -17,10 +46,10 @@ export default function HeroSection() {
             Every Parent Deserves a Second Chance.
           </p>
           <div className={styles.ctaButtons}>
-            <button className={styles.primaryButton}>
+            <button className={styles.primaryButton} onClick={scrollToSafeSleep}>
               Learn About Safe Sleep
             </button>
-            <button className={styles.secondaryButton}>
+            <button className={styles.secondaryButton} onClick={scrollToBookSpeaker}>
               Book a Speaker
             </button>
           </div>
