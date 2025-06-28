@@ -41,7 +41,6 @@ Thank you!`);
   };
 
   const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
     setIsSubmitted(true);
     setShowContactForm(false);
   };
