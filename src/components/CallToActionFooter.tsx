@@ -31,7 +31,7 @@ Please let me know about availability and any requirements.
 
 Thank you!`);
 
-    const mailtoLink = `mailto:info@contact53205.org?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:contact.53205@gmail.com?subject=${subject}&body=${body}`;
     window.open(mailtoLink, '_blank');
   };
 
@@ -67,8 +67,8 @@ Thank you!`);
             <div className={styles.contactFormOverlay}>
               <div className={styles.contactForm}>
                 <h3>Contact Us</h3>
-                <form 
-                  action="https://formsubmit.co/info@contact53205.org" 
+                <form
+                  action="https://formsubmit.co/contact.53205@gmail.com"
                   method="POST"
                   onSubmit={handleFormSubmit}
                 >
@@ -79,43 +79,43 @@ Thank you!`);
 
                   <div className={styles.formGroup}>
                     <label htmlFor="name">Name *</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      name="name" 
-                      required 
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
                       className={styles.formInput}
                     />
                   </div>
-                  
+
                   <div className={styles.formGroup}>
                     <label htmlFor="email">Email *</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      name="email" 
-                      required 
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
                       className={styles.formInput}
                     />
                   </div>
-                  
+
                   <div className={styles.formGroup}>
                     <label htmlFor="message">Message *</label>
-                    <textarea 
-                      id="message" 
-                      name="message" 
-                      required 
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
                       rows={4}
                       className={styles.formTextarea}
                     ></textarea>
                   </div>
-                  
+
                   <div className={styles.formButtons}>
                     <button type="submit" className={styles.submitButton}>
                       Send Message
                     </button>
-                    <button 
-                      type="button" 
+                    <button
+                      type="button"
                       onClick={() => setShowContactForm(false)}
                       className={styles.cancelButton}
                     >
