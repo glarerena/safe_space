@@ -7,7 +7,6 @@ import { useState } from 'react';
 export default function CallToActionFooter() {
   const { ref, className } = useScrollAnimation('right');
   const [showContactForm, setShowContactForm] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleBookSpeaker = () => {
     const subject = encodeURIComponent('Safe Space Campaign - Speaker Request');
@@ -37,12 +36,6 @@ Thank you!`);
 
   const handleContact = () => {
     setShowContactForm(true);
-    setIsSubmitted(false);
-  };
-
-  const handleFormSubmit = (e: React.FormEvent) => {
-    setIsSubmitted(true);
-    setShowContactForm(false);
   };
 
   return (
@@ -69,9 +62,9 @@ Thank you!`);
                 <form
                   action="https://formspree.io/f/xvgrddjp"
                   method="POST"
-                  onSubmit={handleFormSubmit}
                 >
                   <input type="hidden" name="_subject" value="Safe Space Campaign - Contact Form" />
+                  <input type="hidden" name="_next" value={window.location.href} />
                   <input type="text" name="_gotcha" style={{ display: 'none' }} />
 
                   <div className={styles.formGroup}>
@@ -121,12 +114,6 @@ Thank you!`);
                   </div>
                 </form>
               </div>
-            </div>
-          )}
-
-          {isSubmitted && (
-            <div className={styles.successMessage}>
-              <p>Thank you! Your message has been sent successfully.</p>
             </div>
           )}
         </div>
