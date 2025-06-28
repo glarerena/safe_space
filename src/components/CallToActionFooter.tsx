@@ -9,29 +9,13 @@ export default function CallToActionFooter() {
   const [showContactForm, setShowContactForm] = useState(false);
 
   const handleBookSpeaker = () => {
-    const subject = encodeURIComponent('Safe Space Campaign - Speaker Request');
-    const body = encodeURIComponent(`Hello Safe Space Campaign Team,
-
-I'm interested in booking a speaker for our organization/community event.
-
-Organization/Event Details:
-- Organization/Event Name: 
-- Date: 
-- Location: 
-- Expected Audience Size: 
-- Type of Event: (workshop, presentation, community meeting, etc.)
-
-Contact Information:
-- Name: 
-- Email: 
-- Phone: 
-
-Please let me know about availability and any requirements.
-
-Thank you!`);
-
-    const mailtoLink = `mailto:contact.53205@gmail.com?subject=${subject}&body=${body}`;
-    window.open(mailtoLink, '_blank');
+    // Download the speaker profile PDF
+    const link = document.createElement('a');
+    link.href = '/myeshia-bates-speaker-profile.txt';
+    link.download = 'Myeshia-Bates-Speaker-Profile.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleContact = () => {
