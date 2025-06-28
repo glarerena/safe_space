@@ -72,7 +72,7 @@ Thank you!`);
                   method="POST"
                   onSubmit={handleFormSubmit}
                 >
-                  <input type="hidden" name="_next" value="https://contact53205.org/thank-you" />
+                  <input type="hidden" name="_next" value={window.location.href} />
                   <input type="hidden" name="_subject" value="Safe Space Campaign - Contact Form" />
                   <input type="hidden" name="_captcha" value="false" />
                   <input type="text" name="_honey" style={{ display: 'none' }} />
