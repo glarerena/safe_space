@@ -10,33 +10,33 @@ export default function FamilyReunificationSection() {
     <section id="family-reunification" className={styles.familyReunification}>
       <div className={styles.container}>
         <div ref={ref} className={`${styles.content} ${className}`}>
-          <h2 className={styles.title}>🧡 Supporting Underserved Families with Infant Wellness</h2>
+          <h2 className={styles.title}>🧡 Parent & Family Education</h2>
           <div className={styles.layout}>
             <div className={styles.textContent}>
               <p className={styles.description}>
-                Empowering Parents, Protecting Babies
+                Building Healthy Communication & Strong Family Bonds
               </p>
               <p className={styles.mainText}>
-                Many families across South Carolina face challenges like financial hardship, housing instability, or limited access to health education. These invisible burdens can make it harder to keep babies safe—especially during sleep. Our mission is to support these families through community-driven education and wellness resources, so every child has a safe, healthy start in life.
+                Our trauma-informed, relationship-based programs focus on parenting classes that build healthy communication and strong family bonds. We provide family workshops on child development and effective parenting strategies in safe, supportive learning environments.
               </p>
               <div className={styles.helpingFamilies}>
-                <h3>Helping Families Thrive</h3>
+                <h3>Our Family Services</h3>
                 <ul>
-                  <li>Safe sleep education & awareness</li>
-                  <li>Infant wellness and parenting resources</li>
-                  <li>Support for families experiencing hardship</li>
-                  <li>Community health & connection programs</li>
+                  <li>Parenting classes focused on building healthy communication</li>
+                  <li>Family workshops on child development</li>
+                  <li>Effective parenting strategies</li>
+                  <li>Facilitated peer support groups for parents and caregivers</li>
                 </ul>
               </div>
             </div>
             <div className={styles.calloutCard}>
               <div className={styles.calloutContent}>
-                <h3>Supporting Underserved Families</h3>
+                <h3>Life Skills Training</h3>
                 <ul className={styles.impactList}>
-                  <li>Emotional trauma support</li>
-                  <li>Financial hardship assistance</li>
-                  <li>Educational resources</li>
-                  <li>Community connection programs</li>
+                  <li>Botvin Life Skills Program</li>
+                  <li>Decision-making & stress management</li>
+                  <li>Communication skills</li>
+                  <li>Substance abuse & violence prevention</li>
                 </ul>
               </div>
             </div>

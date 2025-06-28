@@ -61,9 +61,9 @@ For more information and support, visit Safe Space Campaign by 53205.
     <section id="safe-sleep" className={styles.safeSleep} style={{ backgroundColor: 'var(--accent-soft-blue)' }}>
       <div className={styles.container}>
         <div ref={ref} className={`${styles.content} ${className}`}>
-          <h2 className={styles.title}>What Is Safe Sleep?</h2>
+          <h2 className={styles.title}>Maternal Health Education</h2>
           <p className={styles.description}>
-            {aapData.importance}
+            Education on safe sleep, postpartum care, and infant wellness
           </p>
           
           <div className={styles.statsContainer}>

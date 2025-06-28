@@ -40,10 +40,10 @@ export default function HeroSection() {
             className={styles.logo}
           />
           <h1 className={styles.title}>
-            Every Baby Deserves a Safe Start.
+            Empowering Families. Building Community. Healing Through Connection.
           </h1>
           <p className={styles.subtitle}>
-            Every Parent Deserves a Second Chance.
+            At 53205, we provide trauma-informed, relationship-based programs to support families and individuals.
           </p>
           <div className={styles.ctaButtons}>
             <button className={styles.primaryButton} onClick={scrollToSafeSleep}>

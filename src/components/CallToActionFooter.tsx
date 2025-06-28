@@ -26,9 +26,9 @@ export default function CallToActionFooter() {
     <section id="call-to-action" className={styles.callToAction}>
       <div className={styles.container}>
         <div ref={ref} className={`${styles.content} ${className}`}>
-          <h2 className={styles.title}>Ready to Make a Difference?</h2>
+          <h2 className={styles.title}>Get Involved</h2>
           <p className={styles.subtitle}>
-            Book a speaker for your organization or community event
+            Join us at 53205 to create safer, stronger families and communities through connection, education, and prevention.
           </p>
           <button className={styles.ctaButton} onClick={handleBookSpeaker}>
             Book a Speaker
